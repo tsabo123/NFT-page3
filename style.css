@@ -325,7 +325,7 @@ background: var(--Call-to-Action, #A259FF) !important;
   display: flex;
   width: 350px;
 height: 60px;
-padding: 0px 30px;
+padding: 30px 30px 60px;
 justify-content: center;
 align-items: center;
 gap: 16px;
@@ -335,11 +335,25 @@ background-color: #2B2B2B !important;
 
 
 }
-.btn-success:focus {
-  border: #FFFFFF !important;
+.btn-success::after {
 
+  content: '';
+  height: 0px;
+  
+  bottom: auto;
+  background-color: #858584;
+  display: block;
+  transition: .5s ease-in-out;
+}
+.btn-success:hover::after {
+  content: '';
+  height: 3px;
+  width: 100%;
+  background-color: #858584;
+  display: block;
 
 }
+
 
 .name {
 color: var(--White, #FFF);
