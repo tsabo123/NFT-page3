@@ -282,7 +282,7 @@ max-width: 330px !important;
   
 }
 .avatart{
-  color: var(--white, #FFF);
+  color:  #FFF;
  
   /* Base (Body) - Space Mono */
   font-family: "SpaceMono-Regular" ;
@@ -305,7 +305,7 @@ justify-content: center;
 align-items: center;
 gap: 12px;
 border-radius: 20px !important;
-background: var(--Call-to-Action, #A259FF) !important;
+background:  #A259FF !important;
 
 }
 .btn-secondary {
@@ -317,7 +317,7 @@ background: var(--Call-to-Action, #A259FF) !important;
   align-items: center;
   gap: 12px;
   border-radius: 20px !important;
-  border: 2px solid var(--Call-to-Action, #A259FF) !important;
+  border: 2px solid  #A259FF !important;
   background-color: #2B2B2B !important;
 
 }
@@ -329,28 +329,20 @@ padding: 30px 30px 60px;
 justify-content: center;
 align-items: center;
 gap: 16px;
-flex: 1 0 0;
-border-bottom: 2px solid var(--caption-label-text, #858584);
+
+border-bottom: 2px solid  #858584 ;
 background-color: #2B2B2B !important;
 
 
 }
-.btn-success::after {
 
-  content: '';
-  height: 0px;
+.btn-success:focus {
+
   
-  bottom: auto;
-  background-color: #858584;
-  display: block;
-  transition: .5s ease-in-out;
-}
-.btn-success:hover::after {
-  content: '';
-  height: 3px;
   width: 100%;
-  background-color: #858584;
+  border-bottom: 2px solid  #858584 !important;
   display: block;
+  
 
 }
 
